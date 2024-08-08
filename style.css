@@ -1,0 +1,159 @@
+header {
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}        
+header h1 {
+    color: rgb(92, 61, 61);
+}
+
+body {
+    color: #fff;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+}
+#content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+    #content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+}
+#content .product {
+    padding: 10px;
+    color: black;
+    text-align: left;
+}
+
+#content .product img {
+    max-width: 100%;
+    height: auto;
+}
+#content .product h4 {
+    color: #5e4e4e;
+}
+#content .product p {
+    color: #462d2d;
+    font-weight: bolder;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+
+/* For child even color */
+/* #content .product:nth-child(even) {
+    background: #777;
+} */
+
+.promotion {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    max-width: 100%;
+    background: #eeebeb;
+    margin: auto;
+}
+@media screen and (min-width: 1025px) {
+    .promotion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+.five {
+    display: grid;
+}
+.five img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.six {
+    padding: 20px;
+    height: auto;
+    margin: 20px;
+    padding-top: 30px;
+}
+.six h3 {
+    color: rgb(117, 56, 56);
+    font-size: 40px;
+    font-weight: 350;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.six p {
+    color: rgb(64, 30, 23);
+    font-size: 13px;
+    font-family: "Ivy Mode", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+    
+}
+.six button {
+    background-color: #4e2c2c;
+    border: none;
+    padding: 18px 55px;
+    text-align: center;
+    color: white;
+    font-weight:bold;
+    font-size: 16px;
+}
+.seven{
+    display: grid;
+    width: 100%;
+}
+.seven img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.eight {
+    padding: 20px;
+    height: auto;
+    margin: 20px;
+    padding-top: 30px;
+}
+.eight h3 {
+    color: rgb(117, 56, 56);
+    font-size: 40px;
+    font-weight: 350;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.eight p {
+    color: rgb(64, 30, 23);
+    font-size: 13px;
+    font-family: "Ivy Mode", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+}
+.eight button {
+    background-color: #4e2c2c;
+    border: none;
+    padding: 18px 55px;
+    text-align: center;
+    color: white;
+    font-weight:bold;
+    font-size: 16px;
+}
+.five {
+    grid-column:  2 / 2;
+}
+.six {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
